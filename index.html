@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is JavaScript? | ScriptStart</title>
+  <meta name="description" content="Learn what JavaScript is, where it runs, and the core concepts every beginner needs — explained with real code from an actual project.">
+  <meta name="author" content="Mike Asiabaka">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="ScriptStart home">
+        <span class="brand-icon" aria-hidden="true">&lt;/&gt;</span>
+        <span class="brand-name">ScriptStart</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Introduction</a></li>
+          <li><a href="concepts.html">Concepts &amp; Real Code</a></li>
+          <li><a href="roadmap.html">Learning Roadmap</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Page introduction">
+    <h1>The Language That Runs the Web</h1>
+    <p>JavaScript turns static pages into interactive experiences — from a single button click to a full web app. This is where your course starts.</p>
+    <div class="hero-cta">
+      <a href="concepts.html" class="btn-primary">Explore Concepts</a>
+      <a href="roadmap.html" class="btn-secondary">View Roadmap</a>
+    </div>
+  </section>
+
+  <main id="main-content">
+
+    <!-- Definition -->
+    <section class="section">
+      <h2 class="section-title">Defining JavaScript</h2>
+
+      <div class="editor-mock" aria-hidden="true">
+        <div class="editor-mock-bar">
+          <span class="editor-dot red"></span>
+          <span class="editor-dot yellow"></span>
+          <span class="editor-dot green"></span>
+        </div>
+        <pre data-code><code>// JavaScript can react to what a person does...
+button.addEventListener('click', function () {
+  message.textContent = 'Hello, world!';
+});
+
+// ...and it can run outside the browser too.
+const total = products.reduce((sum, p) => sum + p.price, 0);</code></pre>
+      </div>
+
+      <p class="section-intro">
+        JavaScript is a programming language that lets webpages respond to what people do — a click, a scroll, a
+        form submitted — instead of just sitting there as static text and images. It runs directly inside every
+        major web browser, which makes it the one language nearly every website relies on in some form.
+      </p>
+      <p class="section-intro">
+        JavaScript also runs outside the browser. With a runtime like Node.js, the same language can power a server,
+        a command-line tool, or — as you'll see throughout this course — an automated backend like a Google Apps
+        Script project or a Cloudflare Worker. Learn it once, and you can read code in all of those places.
+      </p>
+    </section>
+
+    <!-- Stats band -->
+    <div class="stats-band" aria-label="JavaScript facts">
+      <div class="stat-item">
+        <strong>98%</strong>
+        <span>of all websites use JavaScript on the client side</span>
+      </div>
+      <div class="stat-item">
+        <strong>10 days</strong>
+        <span>is how long it took to create the first version, in 1995</span>
+      </div>
+      <div class="stat-item">
+        <strong>#1</strong>
+        <span>most-used language on GitHub, year after year</span>
+      </div>
+    </div>
+
+    <!-- Building blocks -->
+    <section class="section">
+      <h2 class="section-title">The Building Blocks You'll Learn</h2>
+      <p class="section-intro">Every JavaScript program, no matter how big, is built from the same small set of ideas. This course groups them into four areas.</p>
+      <div class="cards-grid">
+
+        <div class="card type-card">
+          <div class="card-icon" aria-hidden="true">📦</div>
+          <span class="tag">Data &amp; Variables</span>
+          <h3>Store and label information</h3>
+          <p>Every program starts with data: numbers, text, true/false values. Variables are the labeled boxes that hold them so you can use them later.</p>
+        </div>
+
+        <div class="card type-card">
+          <div class="card-icon" aria-hidden="true">🔁</div>
+          <span class="tag">Control Flow</span>
+          <h3>Make decisions and repeat work</h3>
+          <p>Loops repeat the same steps without copy-pasting code. Logical operators and conditions decide which path the program should take.</p>
+        </div>
+
+        <div class="card type-card">
+          <div class="card-icon" aria-hidden="true">🧰</div>
+          <span class="tag">Functions &amp; Structures</span>
+          <h3>Organize and reuse code</h3>
+          <p>Functions package up instructions you can run again and again. Arrays and objects organize related pieces of data under one name.</p>
+        </div>
+
+        <div class="card type-card">
+          <div class="card-icon" aria-hidden="true">🌐</div>
+          <span class="tag">The Browser</span>
+          <h3>Bring a page to life</h3>
+          <p>The DOM lets JavaScript read and change a webpage. Local Storage lets it remember things between visits, even after the tab is closed.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Learning process -->
+    <section class="section">
+      <h2 class="section-title">How This Course Builds Each Concept</h2>
+      <p class="section-intro">The concepts build on each other in a specific order. Each one is explained with a real snippet pulled from an actual working project, alongside a simplified version of the same idea.</p>
+      <ol class="steps-list">
+
+        <li class="step-item">
+          <div class="step-num" aria-hidden="true">1</div>
+          <div class="step-body">
+            <h3>Learn the Fundamentals</h3>
+            <p>Data types, variables, and operators — the raw materials every script is built from.</p>
+          </div>
+        </li>
+
+        <li class="step-item">
+          <div class="step-num" aria-hidden="true">2</div>
+          <div class="step-body">
+            <h3>Control the Flow</h3>
+            <p>Loops and logical conditions — how a program repeats work and makes decisions.</p>
+          </div>
+        </li>
+
+        <li class="step-item">
+          <div class="step-num" aria-hidden="true">3</div>
+          <div class="step-body">
+            <h3>Write Functions</h3>
+            <p>Package logic into named, reusable blocks instead of repeating yourself.</p>
+          </div>
+        </li>
+
+        <li class="step-item">
+          <div class="step-num" aria-hidden="true">4</div>
+          <div class="step-body">
+            <h3>Organize Data</h3>
+            <p>Arrays for ordered lists, objects for named fields — the two shapes almost all real data takes.</p>
+          </div>
+        </li>
+
+        <li class="step-item">
+          <div class="step-num" aria-hidden="true">5</div>
+          <div class="step-body">
+            <h3>Touch the Page</h3>
+            <p>The DOM and Local Storage — where everything you've learned finally shows up on screen.</p>
+          </div>
+        </li>
+
+      </ol>
+    </section>
+
+    <!-- Why it matters -->
+    <section class="section">
+      <h2 class="section-title">Why Learn JavaScript?</h2>
+      <p class="section-intro">
+        JavaScript is the only language that runs natively in every web browser, which makes it unavoidable for
+        front-end work — and with Node.js, it runs just as well on a server. It shows up in job postings across
+        nearly every tech role, and in automation scripts far outside "web development" too, including the kind
+        of Google Apps Script and Cloudflare Worker projects this course draws its real examples from.
+      </p>
+      <p class="section-intro">
+        Ready to see the concepts themselves? Each one below is paired with an actual snippet pulled from a working
+        project, so you can see exactly how the idea is used once you're past the practice examples.
+      </p>
+      <div style="display:flex;gap:0.75rem;flex-wrap:wrap;">
+        <a href="concepts.html" class="btn-primary" style="background-color:var(--ink);border-color:var(--ink);color:#fff;">Browse the Concepts</a>
+        <a href="roadmap.html" class="btn-primary">Start the Roadmap</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Mike Asiabaka &mdash; ScriptStart</p>
+    <p><a href="references.html">References</a></p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>

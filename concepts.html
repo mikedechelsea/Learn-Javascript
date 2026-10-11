@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concepts &amp; Real Code | ScriptStart</title>
+  <meta name="description" content="Nine core JavaScript concepts, each explained in plain language and paired with real code from an actual Google Apps Script and Cloudflare Worker project.">
+  <meta name="author" content="Mike Asiabaka">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/main.js" defer></script>
+  <script src="scripts/concepts.js" defer></script>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="ScriptStart home">
+        <span class="brand-icon" aria-hidden="true">&lt;/&gt;</span>
+        <span class="brand-name">ScriptStart</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+      <nav id="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Introduction</a></li>
+          <li><a href="concepts.html">Concepts &amp; Real Code</a></li>
+          <li><a href="roadmap.html">Learning Roadmap</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Page introduction">
+    <h1>9 Concepts, Explained With Real Code</h1>
+    <p>Every card below pairs a plain-English explanation with an actual snippet from a working project, plus a simplified version of the same idea. Click a card to expand it.</p>
+  </section>
+
+  <main id="main-content">
+
+    <!-- Concept cards -->
+    <section class="section">
+      <h2 class="section-title">Pick a Concept</h2>
+      <p class="section-intro">Filter by category, then click any card to reveal the real code and a simplified version side by side.</p>
+
+      <div class="filter-bar" role="group" aria-label="Filter concepts by category">
+        <button class="filter-btn active" data-filter="all">All Concepts</button>
+        <button class="filter-btn" data-filter="fundamentals">Fundamentals</button>
+        <button class="filter-btn" data-filter="control">Control Flow</button>
+        <button class="filter-btn" data-filter="structures">Functions &amp; Data</button>
+        <button class="filter-btn" data-filter="browser">The Browser</button>
+      </div>
+
+      <div class="concept-cards" id="concepts-list" aria-live="polite" aria-label="Concept cards">
+        <!-- populated by concepts.js -->
+      </div>
+    </section>
+
+    <!-- Checklist -->
+    <section class="section">
+      <h2 class="section-title">Concepts I've Learned</h2>
+      <p class="section-intro">Check off each concept once you understand it. Your progress is saved in your browser so you can pick up where you left off.</p>
+
+      <div class="progress-bar-wrap" aria-hidden="true">
+        <div id="skills-progress-bar" role="progressbar" aria-label="Concepts progress"></div>
+      </div>
+      <p id="skills-progress-label" style="margin-bottom:1rem;font-size:0.82rem;color:var(--muted);"></p>
+
+      <ul class="checklist" id="skills-checklist" aria-label="Concepts checklist">
+        <!-- populated by concepts.js -->
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Mike Asiabaka &mdash; ScriptStart</p>
+    <p><a href="references.html">References</a></p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
